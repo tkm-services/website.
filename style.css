@@ -208,4 +208,38 @@ footer{
   .contact-grid{
     grid-template-columns:1fr;
   }
+
+}
+/* زر 3 الشراط */
+.menu-btn{
+  display:none;
+  font-size:26px;
+  background:none;
+  border:none;
+  cursor:pointer;
+  padding:8px 12px;
+}
+
+/* إخفاء المينيو فالموبايل */
+@media (max-width:900px){
+  nav ul{
+    display:none;
+    position:absolute;
+    top:80px;
+    right:20px;
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.1);
+    flex-direction:column;
+    gap:12px;
+  }
+
+  nav ul.active{
+    display:flex !important;
+  }
+
+  .menu-btn{
+    display:block;
+  }
 }
