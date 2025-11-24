@@ -152,3 +152,6 @@ document.addEventListener('DOMContentLoaded',()=>{
   setLang(localStorage.getItem('lang') || 'ar');
 
 });
+function toggleMenu(){
+  document.querySelector('nav').classList.toggle('active');
+}
