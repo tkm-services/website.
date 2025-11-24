@@ -243,3 +243,38 @@ footer{
     display:block;
   }
 }
+/* زر الهمبورغر للهاتف */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 28px;
+  height: 3px;
+  background: var(--dark);
+  border-radius: 5px;
+}
+
+/* قائمة الهاتف */
+nav.active ul {
+  display: flex !important;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  right: 10px;
+  background: white;
+  padding: 14px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  gap: 10px;
+  z-index: 999;
+}
+
+/* إخفاء القائمة العادية وإظهار الهامبورغر */
+@media (max-width:900px){
+  nav ul { display: none; }
+  .hamburger { display: flex; }
+}
